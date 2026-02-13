@@ -35,3 +35,19 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = "🌙";
   }
 });
+// Typing Animation
+window.onload = function () {
+  const text = "Rupesh Kumar";
+  let index = 0;
+
+  function typeEffect() {
+    document.getElementById("typing").textContent = text.slice(0, index);
+
+    if (index <= text.length) {
+      index++;
+      setTimeout(typeEffect, 150);
+    }
+  }
+
+  typeEffect();
+};

@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rupesh Kumar | Portfolio</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,11 @@
   <!-- Navbar -->
   <header>
     <nav class="navbar">
-      <h2 class="logo">Rupesh<span>.</span></h2>
+      <div class="logo">
+  <img src="logo.png" alt="Logo" class="logo-img">
+  <span class="logo-text">Rupesh</span><span class="dot">.</span>
+</div>
+
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
@@ -37,7 +43,8 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-content">
-      <h1>Hi, I'm <span>Rupesh Kumar</span></h1>
+      <h1>Hi, I'm <span id="typing"></span></h1>
+
       <h3>B.Tech CSE (Data Science)</h3>
       <p>
         Passionate about Data Science, Web Development, and building real-world projects using
@@ -46,7 +53,7 @@
 
       <div class="hero-buttons">
         <a href="resume.pdf" download class="btn">Download Resume</a>
-        <a href="#contact" class="btn btn-outline">Hire Me</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
 
       <div class="social-links">
@@ -115,9 +122,26 @@
         <span class="tag">SQLite</span>
         <span class="tag">Gemini API</span>
         <div class="project-links">
-          <a href="#" target="_blank">GitHub</a>
+          <a href="https://github.com/rupesh-6/Ai_ChatBot" target="_blank">GitHub</a>
         </div>
       </div>
+      <div class="project-card">
+  <h3>Netflix Content Strategy Analysis Dashboard</h3>
+  <p>
+    Built an interactive Power BI dashboard analyzing Netflix’s global content strategy using a dataset of
+    8,807 titles. Identified trends like the surge in “Originals”, regional content preferences, and maturity
+    rating dominance. Includes ETL using Power Query, DAX measures, and star schema modeling for performance.
+  </p>
+
+  <span class="tag">Power BI</span>
+  <span class="tag">DAX</span>
+  <span class="tag">Power Query</span>
+  <span class="tag">Data Modeling</span>
+
+  <div class="project-links">
+    <a href="https://github.com/rupesh-6/Netflix-Content-Strategy-Analysis-PowerBI" target="_blank">GitHub</a>
+  </div>
+</div>
 
       <div class="project-card">
         <h3>Clothing E-Commerce Website</h3>
@@ -129,7 +153,7 @@
         <span class="tag">CSS</span>
         <span class="tag">JavaScript</span>
         <div class="project-links">
-          <a href="#" target="_blank">GitHub</a>
+          <a href="https://github.com/rupesh-6/shopping_website_project/tree/main" target="_blank">GitHub</a>
         </div>
       </div>
 
@@ -143,7 +167,7 @@
         <span class="tag">GA4</span>
         <span class="tag">SEO</span>
         <div class="project-links">
-          <a href="#" target="_blank">Live Site</a>
+          <a href="https://vishwasrupesh6.wixsite.com/mumbai-scented-rever" target="_blank">Live Site</a>
         </div>
       </div>
     </div>
@@ -151,16 +175,29 @@
 
   <!-- Certificates -->
   <section class="section" id="certificates">
-    <h2 class="section-title">Certificates</h2>
+  <h2 class="section-title">Certificates</h2>
 
-    <div class="list-box">
-      <ul>
-        <li>Privacy and Security in Online Social Media | NPTEL (Apr 2025)</li>
-        <li>Software Engineering: Implementation and Testing | Coursera (Apr 2024)</li>
-        <li>Master Generative AI & Generative AI Tools | Infosys Springboard (Aug 2025)</li>
-      </ul>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <h3>Privacy and Security in Online Social Media</h3>
+      <p>NPTEL | Apr 2025</p>
+      <a href="https://drive.google.com/file/d/1DeYVgfIXQOe_MTQG-rFiXxDydH98vZjd/view?usp=drive_link" target="_blank">View Certificate</a>
     </div>
-  </section>
+
+    <div class="cert-card">
+      <h3>Software Engineering: Implementation and Testing</h3>
+      <p>Coursera | Apr 2024</p>
+      <a href="https://www.coursera.org/account/accomplishments/verify/9L4DH9JAF6W3" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="cert-card">
+      <h3>Computational Theory: Language Principle & Finite Automata Theory</h3>
+      <p>Infosys Springboard | Aug 2025</p>
+      <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_014157693153288192147/1-03149871-4f0b-4dc0-b70d-47463bb2c35a.pdf" target="_blank">View Certificate</a>
+    </div>
+  </div>
+</section>
+
 
   <!-- Education -->
   <section class="section" id="education">
